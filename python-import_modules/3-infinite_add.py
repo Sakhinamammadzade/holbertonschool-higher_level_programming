@@ -7,4 +7,3 @@ total = 0
 for i in range(count):
     total += int(sys.argv[i + 1])
     print("{}".format(total))
-
