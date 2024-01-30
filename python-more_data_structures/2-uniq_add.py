@@ -7,4 +7,4 @@ def uniq_add(my_list=[]):
             if num not in new_list:
                 new_list.add(num)
                 total += num
-        return total
+    return total
