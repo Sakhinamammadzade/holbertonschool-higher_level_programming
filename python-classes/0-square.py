@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-"""
- My first square
+""" My first Square"""
 
-"""
+
 class Square:
-    """
-     This class nothing do anything this moment
-    """
+    """This class dont do anything"""
     pass
