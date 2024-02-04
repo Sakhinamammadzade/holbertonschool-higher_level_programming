@@ -3,6 +3,7 @@
 
 
 class Square:
+    """Document for a Square class"""
     def __init__(self, size=0):
         """Document for access and update attribute"""
         if type(size) is not int:
