@@ -82,12 +82,10 @@ class Rectangle:
         area_2 = rect_2.width * rect_2.height
 
         if area_1 >= area_2:
-            return rect_1
+            return rect_1()
         else:
-            return rect_2
+            return rect_2()
 
     @classmethod
     def square(cls, size=0):
-        if size < 0:
-            raise ValueError("width must be >= 0")
-        return cls(size, size)
+        return (cls(size, size))
