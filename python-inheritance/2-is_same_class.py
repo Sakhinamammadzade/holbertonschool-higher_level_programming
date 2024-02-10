@@ -3,5 +3,5 @@
 
 
 def is_same_class(obj, a_class):
-    """function returns is ins of class"""
-    return isinstance(obj, a_class)
+    """function returns type of class"""
+    return type(obj) is a_class
