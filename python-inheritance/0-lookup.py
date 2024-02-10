@@ -3,5 +3,5 @@
 
 
 def lookup(obj):
-    """The dir() function returns a list of all the members in the specified object"""
+    """The dir() function returns a list all the members in the specified obt"""
     return dir(obj)
