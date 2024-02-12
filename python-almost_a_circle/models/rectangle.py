@@ -12,3 +12,26 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+
+    @property
+    def width(self):
+        """property for width"""
+        return self.__width
+
+
+    @width.setter
+    def width(self, x):
+        """Setter method for width property"""
+        self.__width = x
+
+
+    @property
+    def height(self):
+        """Property for height"""
+        return self.__height
+
+    @height.setter
+    def height(self, y):
+        """Setter method for height property """
+        self.__height = y
+
