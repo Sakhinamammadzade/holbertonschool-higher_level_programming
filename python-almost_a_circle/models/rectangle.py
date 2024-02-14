@@ -80,7 +80,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """Str"""
-        return ("[Rectangle]({}) {}/{} - {}/{}".format(
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id,
                 self.__width,
                 self.__height,
