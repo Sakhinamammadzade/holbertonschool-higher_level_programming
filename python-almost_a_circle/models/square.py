@@ -33,10 +33,8 @@ class Square(Rectangle):
                 elif i == 1:
                     self.width = arg
                 elif i == 2:
-                    self.height = arg
-                elif i == 3:
                     self.x = arg
-                elif i == 4:
+                elif i == 3:
                     self.y = arg
         else:
             for key, value in kwargs.items():
