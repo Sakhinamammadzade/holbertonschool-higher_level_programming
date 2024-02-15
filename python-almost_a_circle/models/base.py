@@ -33,3 +33,11 @@ class Base():
                 data.append(obj.to_dictionary())
         with open(filename, "w", encoding="utf-8") as f:
             f.write(cls.to_json_string(data))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Json string to dictionary"""
+        if json_string is None:
+            return '[]'
+        else:
+            return json_string
