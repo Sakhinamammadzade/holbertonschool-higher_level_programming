@@ -9,13 +9,13 @@ import os
 class TestBase(unittest.TestCase):
     def test_square_positive_num(self):
         square = Square(1, 2, 3, 4)
-        self.assertEquals(square.size, 1)
+        self.assertEqual(square.size, 1)
 
         square = Square(1, 2, 3)
-        self.assertEquals(square.y, 3)
+        self.assertEqual(square.y, 3)
 
         square = Square(1, 2)
-        self.assertEquals(square.x, 2)
+        self.assertEqual(square.x, 2)
 
     def test_square_string(self):
         with self.assertRaises(TypeError):
@@ -81,7 +81,7 @@ class TestBase(unittest.TestCase):
 
         Square.save_to_file([Square(1, id=1)])
         with open("Square.json", "r") as f:
-            self.assertEqual(f.read(), '[{"id": 1, "x": 0, "size": 1, "y": 0}]')
+            self.assertEqual(f.read(), '[{"id": 1, "size": 1, "x": 0, "y": 0}]')
 
     def test_load_from_file(self):
         try:
