@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""add_attribute"""
 
 
 def add_attribute(obj, attribute, value):
