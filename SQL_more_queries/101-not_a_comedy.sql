@@ -1,7 +1,7 @@
 -- lists all shows without the genre Comedy in the database
 SELECT tv_shows.title
 FROM tv_shows
-WHERE id NOT IN (
+WHERE NOT EXISTS (
 	    SELECT 1
 	    FROM tv_show_genres
 	    JOIN tv_genres ON tv_show_genres.genre_id = tv_genres.id
